@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+#fullbody {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* background video  */
+#backvideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.8;
+}
+
+
+/* Score Card  */
+#ScoreCard{
+    width: 200px;
+    height: 100px;
+    background: black;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 43px;
+    top: 50px;
+}
+#score{
+    padding-left: 5px;
+}
+
+/*fish  */
+
+#fish {
+    width: 60px;
+    height: 60px;
+    background: url("images/nemo.png") no-repeat center center/cover;
+    position: absolute;
+    left: 680px;
+    top: 200px;
+    right: auto;
+}
+
+.layer {
+    width: 150px;
+    height: 50px;
+    background: url("images/shark2.png") no-repeat center center/cover;
+    position: absolute;
+}
+
+.Rlayer {
+    width: 200px;
+    height: 50px;
+    background: url("images/shark.png") no-repeat center center/cover;
+    position: absolute;
+}
+
+#layer1 {
+    top: 400px;
+    left: 550px;
+    right: auto;
+}
+
+#layer2 {
+    top: 600px;
+    left: 550px;
+    right: auto;
+    animation-delay: 4s;
+}
+
+#layer3 {
+    top: 500px;
+    left: 750px;
+    right: auto;
+    animation-delay: 2s;
+}
+
+#layer4 {
+    top: 700px;
+    left: 800px;
+    right: auto;
+    animation-delay: 6s;
+}
+.animation {
+    animation: layer 8s linear infinite;
+    visibility: visible;
+}
+
+@keyframes layer {
+    0% {
+        top: 100%;
+    }
+    50% {
+        left: 650px;
+    }
+    100% {
+        top: 0%;
+    }
+}
+
+
+/* End Card  */
+
+#EndCard{
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 30%; 
+    visibility: hidden;
+    transition-delay: 0.5s;
+}
+
+#EndCard h1{
+    font-size:200px;  
+}
+
+#Refresh {
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    color: white;
+    position: absolute;
+    left: 48%;
+    bottom: 0;
+    z-index: 999;
+    visibility: hidden;
+    border: none;
+    transition-delay: 0.1s;
+    cursor: pointer;
+}
+#Ricon{
+    font-size: 100px;
+    color: red;
+}

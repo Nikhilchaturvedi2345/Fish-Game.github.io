@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Fish Game</title>
+</head>
+
+<body>
+    <video autoplay loop muted id="backvideo">
+        <source src="video/background.mp4" type="video/mp4">
+    </video>
+    <audio id="Endsound"  src="music/gameover.mp3"></audio>
+    <audio src="music/click.wav" id="clicksound"></audio>
+    <div id="fullbody">         
+        <div id="ScoreCard">
+            Score:<div id="score" >0</div>
+        </div>
+
+        <div id="fish"></div>
+        <div id="layer1" class="layer animation"></div>
+        <div id="layer2" class="layer animation"></div>
+        <div id="layer3" class="Rlayer animation"></div>
+        <div id="layer4" class="Rlayer animation"></div>
+        <div id="EndCard">
+            <h1>Game Over</h1>
+            <button id="Refresh"><i class="fas fa-redo" id="Ricon"></i></button>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
